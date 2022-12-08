@@ -16,7 +16,7 @@ a. Only those categories were kept which had samples more than 100. This gave 18
 
 b. Only those categories were kept which had samples more than 10. This gave 27 categories in total and the distribution was as shown.
 
-![](IMAGES/data_27.PNG)
+![](data_27.PNG)
 
 5. To make the data balanced oversampling techniques were used, whose results are also discussed below.
 6. Tf-IDF matrix was obtained for the cleaned data for ML models.
@@ -38,7 +38,7 @@ C-LSTM : C-LSTM models take advantage of both CNN and BiLSTM networks. A CNN lay
 
 Very Deep CNN (VDCNN) : In Computer Vision, deeper CNNs have been advantageous in classification tasks. Some works using the same have also been done for classification tasks in NLP. I have implemented  Deep CNN models of varying depth, and have analysed their performance. As the network goes deeper, it becomes harder to train because of the vanishing gradient problem, and hence there is a need for larger datasets, and this requires more training time. A residual connection can help in maintaining the flow of gradients and can make the training of VDCNNs easier in case of a deficiency in training data. 
  
- ![](IMAGES/VDCNN.PNG)
+ ![](VDCNN.PNG)
  
 Multi CNN: In multi-CNNs, convolutional kernels of varying filter size are used in parallel to extract spatial information on multiple window sizes. After using multi-CNNs, outputs are concatenated and are further passed to dense layers for classification. 
 
@@ -56,7 +56,7 @@ Transformer :
 
 Densely-connected CNN with Multi-scale feature attention: Inspired from Computer Vision tasks, this method is based upon the dense connections and attention-weighted multi-scale features. Input text is represented as a planar array, which is passed through densely-connected CNN layers to obtain multi-scale high-dimensional features. These multi-scale features are pooled down in a manner such that their dimensions become the same. The features are weighted by the attention, and are added before passing through the dense layers for classification.
 
- ![](IMAGES/MACNN.PNG)
+ ![](MACNN.PNG)
 
 ABCDM : Attention-based Bidirectional CNN-RNN Deep Model (ABCDM) is based on multiple techniques consisting of the following:
 1. The input text sequence in the form of word embeddings is passed through a Bidirectional GRU layer and a Bidirectional LSTM layer in parallel 
@@ -91,45 +91,45 @@ Final results for classification with 18 categories.
 
 ML models
 
- ![](IMAGES/ML.PNG)
+ ![](ML.PNG)
 
 Models Based on CNN and RNN
 
-![](IMAGES/RNNCNN_18.PNG)
+![](RNNCNN_18.PNG)
 
 Models Based on CNN and RNN using oversampling.
 
-![](IMAGES/RNNCNN_18_OS.PNG)
+![](RNNCNN_18_OS.PNG)
 
 Through the results it could be said that training on balanced data gave better results in term of all the performance metrics.
 
 Models Based on Attention mechanism
 
-![](IMAGES/ATT_18.PNG)
+![](ATT_18.PNG)
 
 Language Model based Classifier
 
-![](IMAGES/LANG_18.PNG)
+![](LANG_18.PNG)
 
 Capsule Network based Classifier
 
-![](IMAGES/CAPSNET.PNG)
+![](CAPSNET.PNG)
 
 Confusion matrix for best performing method
 
-![](IMAGES/BERT_CONF.PNG)
+![](BERT_CONF.PNG)
 
 ROC Curve for best performing method
 
-![](IMAGES/BERT_ROC.png)
+![](BERT_ROC.png)
 
 Final results for classification with 27 categories.
 
-![](IMAGES/RNNCNN_27.PNG)
+![](RNNCNN_27.PNG)
 
 Final results for classification with 27 categories using oversampling.
 
-![](IMAGES/RNNCNN_27_OS.PNG)
+![](RNNCNN_27_OS.PNG)
 
 
 # Future Works
