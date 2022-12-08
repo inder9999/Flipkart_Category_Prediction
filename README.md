@@ -6,7 +6,7 @@
 2. Primary Category was extracted from the product category tree
 3. After extracting the Primary Category, 266 unique categories were obtained with a very uneven distribution.
 
-![](IMAGES/266_data.PNG)
+![](266_data.PNG)
 
 4. For training purposes, the no. of categories were reduced. It was done in th following way: 
 
